@@ -1,14 +1,8 @@
 var Person = function(firstAndLast) {
   // Complete the method below and implement the others similarly
-  this.getFullName = function() {
-  	return firstAndLast;
-  };
-  this.getFirstName = function() {
-  	return firstAndLast.split(" ")[0];
-  };
-  this.getLastName = function() {
-  	return firstAndLast.split(" ")[1];
-  };
+  this.getFullName = () => firstAndLast;
+  this.getFirstName = () => firstAndLast.split(" ")[0];
+  this.getLastName = () => firstAndLast.split(" ")[1];
   this.setFullName = function(fullName) {
   	if (typeof fullName === "string") {
   		firstAndLast = fullName
